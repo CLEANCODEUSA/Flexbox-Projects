@@ -1,0 +1,125 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: montserrat;
+	padding: 0;
+	margin: 0;
+}
+
+header {
+	height: 250px;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+	color: black;
+	background-color: tomato;
+}
+
+header p {
+	font-weight: lighter;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav ul li {
+	flex: 1 0 auto;
+	min-width: 200px;
+}
+
+nav ul li a {
+	display: block;
+	padding: 15px;
+	text-decoration: none;
+	background-color: lightgray;
+	transition: all .5s ease;
+	text-align: center;
+	color: black;
+}
+
+nav ul li a:hover {
+	background-color: white;
+}
+
+@media screen and (min-width: 600px) {
+	nav ul {
+		display: flex;
+		flex-wrap: wrap;
+	}
+}
+
+.content {
+	display: flex;
+	flex-flow: row;
+	flex-wrap: wrap;
+	/*height: 800px;*/
+	/*justify-content: flex-start;*/
+}
+
+.left-sidebar {
+	/*flex: 25%;*/
+	flex: 1 0 320px;
+	background-color: yellow;
+	padding: 15px;
+	margin: 15px;
+}
+
+.main {
+	/*flex: 50%;*/
+	flex: 1 0 40%;
+	background-color: skyblue;
+	padding: 15px;
+	margin: 15px;
+}
+
+.right-sidebar {
+	flex: 1 0 320px;
+	background-color: lightgreen;
+	padding: 15px;
+	margin: 15px;
+}
+
+footer ul {
+	list-style: none;
+	margin: 20px 0px;
+	padding: 0;
+}
+
+footer .row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+footer .column {
+	flex: 25%;
+}
+
+footer ul li {
+	margin: 20px auto;
+}
+
+footer ul li a {
+	text-decoration: none;
+	color: black;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 960px) {
+  footer .column {
+    flex: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  footer .column {
+    flex: 100%;
+  }
+}
+
