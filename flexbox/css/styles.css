@@ -111,15 +111,14 @@ footer ul li a {
 
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media (max-width: 960px) {
-  footer .column {
-    flex: 50%;
-  }
+	footer .column {
+		flex: 50%;
+	}
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media (max-width: 600px) {
-  footer .column {
-    flex: 100%;
-  }
+	footer .column {
+		flex: 100%;
+	}
 }
-
